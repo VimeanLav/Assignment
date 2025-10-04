@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vimean's Recipe Book</title>
+  <style>
+    body {
+      background-color: bisque;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: blueviolet;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin-top: 10px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    table:hover {
+      background-color: aquamarine;
+    }
+
+    .image {
+      width: 150px;
+      float: right;
+      border: 10px ridge #FA9F42;
+      margin: 10px;
+      padding: 1px;
+      border-radius: 10px;
+    }
+
+    .image:hover {
+      width: 200px;
+      transition: 0.3s;
+    }
+
+    footer {
+      background-color: chocolate;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    form {
+      background-color: #fff4e0;
+      padding: 15px;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: blueviolet;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: darkviolet;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Vimean's Recipe Book</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="home">
+    <section>
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#recipe1">Chocolate Pancake</a></li>
+        <li><a href="#recipe2">Spaghetti Carbonara</a></li>
+      </ol>
+    </section>
+
+    <!-- Recipe 1 -->
+    <article id="recipe1">
+      <h2>Chocolate Pancake 🍫🥞</h2>
+      <ul>
+        <li>Time: 15 minutes</li>
+        <li>Serves: 2</li>
+      </ul>
+
+      <img class="image" src="https://www.kasandbox.org/programming-images/food/chocolates.png"
+        alt="Delicious chocolate pancakes" />
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ingredients</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Flour</td>
+            <td>1 cup</td>
+            <td>$0.50</td>
+          </tr>
+          <tr>
+            <td>Milk</td>
+            <td>1 cup</td>
+            <td>$0.40</td>
+          </tr>
+          <tr>
+            <td>Chocolate</td>
+            <td>50g</td>
+            <td>$1.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Step 1:</strong> Mix all ingredients in a bowl until smooth.</p>
+      <p><strong>Step 2:</strong> Pour batter on a hot pan and cook until golden brown.</p>
+      <p><strong>Step 3:</strong> Serve with melted chocolate on top.</p>
+    </article>
+
+    <hr>
+
+    <!-- Recipe 2 -->
+    <article id="recipe2">
+      <h2>Spaghetti Carbonara 🍝</h2>
+      <ul>
+        <li>Time: 25 minutes</li>
+        <li>Serves: 3</li>
+      </ul>
+
+      <img class="image"
+        src="https://www.allrecipes.com/thmb/Vg2cRidr2zcYhWGvPD8M18xM_WY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg"
+        alt="Plate of spaghetti carbonara" />
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ingredients</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Spaghetti</td>
+            <td>200g</td>
+            <td>$1.50</td>
+          </tr>
+          <tr>
+            <td>Eggs</td>
+            <td>2</td>
+            <td>$0.50</td>
+          </tr>
+          <tr>
+            <td>Bacon</td>
+            <td>100g</td>
+            <td>$2.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Step 1:</strong> Boil spaghetti until tender.</p>
+      <p><strong>Step 2:</strong> Fry bacon until crispy, then mix with eggs and cheese.</p>
+      <p><strong>Step 3:</strong> Combine all together and serve warm.</p>
+    </article>
+
+    <hr>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><em>Source: <a href="https://www.allrecipes.com" target="_blank">AllRecipes</a></em></p>
+    <p>&copy; 2025 Vimean's Recipe Book</p>
+  </footer>
+</body>
+
+</html>
